@@ -40,7 +40,7 @@ cd cartoonify-app
 ```bash
 pip install -r requirements.txt
 ```
-3. Run the App
+### 3. Run the App
 ```bash
 streamlit run app.py
 ```
