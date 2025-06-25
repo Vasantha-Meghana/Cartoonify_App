@@ -70,7 +70,5 @@ You can run this notebook in Google Colab or your local Jupyter environment.
 ## Future Improvements
   - Add more filter styles (e.g., sketch, oil painting, pencil sketch)
   - Enable webcam integration
-  - Deploy to Streamlit Cloud or Render
   - Add option to view and save all transformation stages
-  - Optimize for mobile devices
 
