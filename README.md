@@ -52,7 +52,7 @@ You can run this notebook in Google Colab or your local Jupyter environment.
 ## Sample Output
 
 <p align="center">
-  <b>Original Image</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Cartoonified Image</b>
+  <b>Original Image</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Cartoonified Image</b>
 </p>
 
 <p align="center">
