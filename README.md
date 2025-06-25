@@ -1,11 +1,10 @@
-# 🎨 Cartoonify Your Image
+# Cartoonify Your Image
 
 A simple yet powerful application built using **Python**, **OpenCV**, and **Streamlit** that converts normal photographs into cartoon-like images. This project includes both a **Jupyter notebook** for explanation and a **Streamlit web app** for interactive use.
 
 
-## 🧠 How Cartoonification Works
+## How Cartoonification Works
 The cartoonify algorithm uses classical image processing steps:
-
 1. Grayscale Conversion – simplifies color complexity
 2. Median Blurring – reduces image noise
 3. Adaptive Thresholding – extracts edges (sketch effect)
@@ -15,7 +14,7 @@ The cartoonify algorithm uses classical image processing steps:
 These steps are applied in cartoonify_utils.py.
 The final result is an image that looks hand-drawn or illustrated, giving it a fun cartoon-like effect.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```plaintext
 cartoonify-app/
@@ -26,7 +25,7 @@ cartoonify-app/
 └── README.md                     # Project documentation
 ```
 
-## 🚀 Try It Locally
+## Try It Locally
 
 ### 1. Clone the Repository
 ```bash
@@ -41,7 +40,7 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-## 📒 Explore via Jupyter Notebook
+## Explore via Jupyter Notebook
 If you'd like to understand the logic in a more educational format, open:
 
 ```bash
@@ -50,7 +49,7 @@ Cartooning_an_Image_using_OpenCV.ipynb
 You can run this notebook in Google Colab or your local Jupyter environment.
 
 
-## 🖼️ Sample Output
+## Sample Output
 
 <p align="center">
   <b>Original Image</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Cartoonified Image</b>
@@ -61,17 +60,14 @@ You can run this notebook in Google Colab or your local Jupyter environment.
   <img src="https://github.com/user-attachments/assets/343611bf-4b38-4aab-bf05-0628d1ce7895" alt="Cartoonified Image" width="300"/>
 </p>
 
+## Tech Stack
+  -  Python 3
+  -  OpenCV
+  -  NumPy
+  -  Pillow
+  -  Streamlit
 
-
-
-## 🛠 Tech Stack
-  - 🐍 Python 3
-  - 📦 OpenCV
-  - 📊 NumPy
-  - 🖼️ Pillow
-  - 🌐 Streamlit
-
-## 💡 Future Improvements
+## Future Improvements
   - Add more filter styles (e.g., sketch, oil painting, pencil sketch)
   - Enable webcam integration
   - Deploy to Streamlit Cloud or Render
