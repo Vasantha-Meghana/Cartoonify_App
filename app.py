@@ -8,23 +8,23 @@ from PIL import Image
 import io
 
 # Streamlit page setup
-st.set_page_config(page_title="🎨 Cartoonify Your Image", layout="centered")
+st.set_page_config(page_title="Cartoonify Your Image", layout="centered")
 
 # App title
-st.title("✨ Cartoonify Your Image")
+st.title("Cartoonify Your Image")
 st.markdown("Upload a photo and transform it into a fun **cartoon-style** image using OpenCV!")
 
 # File uploader
-uploaded_file = st.file_uploader("📤 Upload your image", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Upload your image", type=["jpg", "jpeg", "png"])
 
 # Sidebar info
 with st.sidebar:
-    st.header("ℹ️ About")
+    st.header("About")
     st.markdown("""
     This app uses **OpenCV** to apply:
-    - 🖤 Grayscale conversion  
-    - ✏️ Edge detection  
-    - 🎨 Bilateral filtering  
+    - Grayscale conversion  
+    - Edge detection  
+    - Bilateral filtering  
     to give your image a **cartoonified** look!
     """)
 
@@ -45,15 +45,15 @@ if uploaded_file is not None:
     image_resized = Image.fromarray(cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB))
 
     # Display original image
-    st.image(image_resized, caption="🖼️ Uploaded Image", use_container_width=True)
+    st.image(image_resized, caption="Uploaded Image", use_container_width=True)
 
     # Button to apply cartoon filter
-    if st.button("🎨 Cartoonify Now"):
+    if st.button("Cartoonify Now"):
         cartoon = cartoonify_image(image_np)
 
         # Convert and display cartoonified image
         cartoon_pil = Image.fromarray(cartoon)
-        st.image(cartoon_pil, caption="✨ Cartoonified Image", use_container_width=True)
+        st.image(cartoon_pil, caption="Cartoonified Image", use_container_width=True)
 
         # Prepare image for download
         buf = io.BytesIO()
@@ -62,7 +62,7 @@ if uploaded_file is not None:
 
         # Download button
         st.download_button(
-            label="📥 Download Cartoon Image",
+            label="Download Cartoon Image",
             data=byte_im,
             file_name="cartoonified.jpg",
             mime="image/jpeg"
@@ -70,4 +70,4 @@ if uploaded_file is not None:
 
 # Footer note
 st.markdown("---")
-st.markdown("Made with ❤️ using Python & Streamlit")
+st.markdown("Made with Python & Streamlit")
