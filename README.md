@@ -2,7 +2,6 @@
 
 A simple yet powerful application built using **Python**, **OpenCV**, and **Streamlit** that converts normal photographs into cartoon-like images. This project includes both a **Jupyter notebook** for explanation and a **Streamlit web app** for interactive use.
 
----
 
 ## 🧠 How Cartoonification Works
 The cartoonify algorithm uses classical image processing steps:
@@ -15,8 +14,6 @@ The cartoonify algorithm uses classical image processing steps:
 
 These steps are applied in cartoonify_utils.py.
 The final result is an image that looks hand-drawn or illustrated, giving it a fun cartoon-like effect.
-
----
 
 ## 📂 Repository Structure
 
