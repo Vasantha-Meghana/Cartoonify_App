@@ -1,22 +1,33 @@
-# Cartoonify_App
-A Streamlit app to convert images into cartoon-style using OpenCV
-
 # 🎨 Cartoonify Your Image
 
-A simple web app built with **Streamlit** and **OpenCV** that transforms your uploaded images into a cartoon-like version using edge detection and filtering techniques.
+A simple yet powerful application built using **Python**, **OpenCV**, and **Streamlit** that converts normal photographs into cartoon-like images. This project includes both a **Jupyter notebook** for explanation and a **Streamlit web app** for interactive use.
 
 ---
 
-## 🧠 How It Works
+## 🧠 How Cartoonification Works
+The cartoonify algorithm uses classical image processing steps:
 
-This app uses OpenCV to apply the following steps to an image:
-1. Convert the image to grayscale
-2. Apply median blur for noise reduction
-3. Detect edges using adaptive thresholding
-4. Apply bilateral filtering to preserve edges while smoothing colors
-5. Combine edges with filtered image for a cartoon effect
+1. Grayscale Conversion – simplifies color complexity
+2. Median Blurring – reduces image noise
+3. Adaptive Thresholding – extracts edges (sketch effect)
+4. Bilateral Filtering – smooths regions while preserving edges
+5. Bitwise AND – overlays filtered image with edges to produce final cartoon
+
+These steps are applied in cartoonify_utils.py.
+The final result is an image that looks hand-drawn or illustrated, giving it a fun cartoon-like effect.
 
 ---
+
+## 📂 Repository Structure
+
+```plaintext
+cartoonify-app/
+├── app.py                         # Streamlit web app for cartoonifying images
+├── cartoonify_utils.py           # Utility functions for image processing
+├── Cartooning_an_Image_using_OpenCV.ipynb  # Jupyter notebook with step-by-step explanation
+├── requirements.txt              # Python dependencies (optional for deployment)
+└── README.md                     # Project documentation
+```
 
 ## 🚀 Try It Locally
 
@@ -33,39 +44,33 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-📂 Project Structure
+## 📒 Explore via Jupyter Notebook
+If you'd like to understand the logic in a more educational format, open:
+
 ```bash
-cartoonify-app/
-├── app.py                # Streamlit app code
-├── cartoonify_utils.py   # Image processing functions
-├── requirements.txt      # Project dependencies
-└── README.md             # Project overview and setup instructions
+Cartooning_an_Image_using_OpenCV.ipynb
+You can run this notebook in Google Colab or your local Jupyter environment.
 ```
-🖼️ Sample Output
+
+
+## 🖼️ Sample Output
 Original Image	Cartoonified Image
-(Insert image)	(Insert image)
+![input_img](https://github.com/user-attachments/assets/c4fc3ddd-a303-45f6-8945-706961d5dbb5)
+![cartoonified](https://github.com/user-attachments/assets/343611bf-4b38-4aab-bf05-0628d1ce7895)
 
-You can include example inputs and outputs by placing them in an examples/ folder and linking them here.
 
-🛠️ Tech Stack
-Python
 
-Streamlit
+## 🛠 Tech Stack
+  🐍 Python 3
+  📦 OpenCV
+  📊 NumPy
+  🖼️ Pillow
+  🌐 Streamlit
 
-OpenCV
-
-NumPy
-
-Pillow (PIL)
-
-💡 Future Improvements
-Add more filter styles (e.g., sketch, oil painting, pencil sketch)
-
-Enable webcam integration
-
-Deploy to Streamlit Cloud or Render
-
-Add option to view and save all transformation stages
-
-Optimize for mobile devices
+##💡 Future Improvements
+  - Add more filter styles (e.g., sketch, oil painting, pencil sketch)
+  - Enable webcam integration
+  - Deploy to Streamlit Cloud or Render
+  - Add option to view and save all transformation stages
+  - Optimize for mobile devices
 
