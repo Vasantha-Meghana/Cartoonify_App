@@ -46,8 +46,8 @@ If you'd like to understand the logic in a more educational format, open:
 
 ```bash
 Cartooning_an_Image_using_OpenCV.ipynb
-You can run this notebook in Google Colab or your local Jupyter environment.
 ```
+You can run this notebook in Google Colab or your local Jupyter environment.
 
 
 ## 🖼️ Sample Output
